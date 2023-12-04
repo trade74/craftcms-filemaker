@@ -13,6 +13,8 @@ use craft\feedme\events\FeedDataEvent;
 use craft\feedme\services\DataTypes;
 use craft\helpers\FileHelper;
 use yii\base\Event;
+use craft\events\RegisterTemplateRootsEvent;
+use craft\web\View;
  
 
 /**
@@ -42,6 +44,13 @@ class Plugin extends BasePlugin
     {
         parent::init();
 
+        Event::on(
+            View::class,
+            View::EVENT_REGISTER_SITE_TEMPLATE_ROOTS,
+            function(RegisterTemplateRootsEvent $event) {
+                $event->roots['something'] = __DIR__ . '/template-two';
+            }
+        );
        // $this->createOverrideFolder();
 
         // Defer most setup tasks until Craft is fully initialized
@@ -123,6 +132,9 @@ class Plugin extends BasePlugin
                 ]
             ],
         ];
+
+       
+
         
             // Feed back to the plugin
             FeedMe::getInstance()->setSettings((array) $settings);
