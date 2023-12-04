@@ -16,8 +16,14 @@
     },
     "autoload": {
         "psr-4": {
-            "craftyfm\\filemaker\\": "src/"
-        }
+            "craftyfm\\craftcms-filemaker\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "vendor/craftcms/feed-me/src/helpers/AssetHelper.php"
+        ],
+        "files": [
+            "vendor/craftyfm/craftcms-filemaker/src/overrides/AssetHelper.php"
+        ]
     },
     "extra": {
         "handle": "filemaker",
