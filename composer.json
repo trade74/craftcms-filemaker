@@ -1,0 +1,39 @@
+{
+    "name": "craftyfm/filemaker",
+    "description": "A craft CMS plugin to simplify connection to the Filemaker Data API. Connect to a filemaker database and use a button from Filemaker to push data into Craft CMS. This plugin also using webhooks to push dat into Filemaker's Data API",
+    "type": "craft-plugin",
+    "license": "proprietary",
+    "support": {
+        "email": "stuart@x2network.net"
+    },
+    "version": "1.0.0",
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.5.0"
+    },
+    "require-dev": {
+        "craftcms/phpstan": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "craftyfm\\filemaker\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "filemaker",
+        "name": "filemaker",
+        "developer": "Stuart Russell",
+        "documentationUrl": ""
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
