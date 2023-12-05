@@ -23,8 +23,8 @@ Open your terminal and run the following commands:
 cd /path/to/my-project.test
 
 # tell Composer to load the plugin
-composer require craftyfm/craft-filemaker
+composer require craftyfm/craftcms-filemaker
 
 # tell Craft to install the plugin
-./craft plugin/install filemaker
+./craft plugin/install craftcms-filemaker
 ```
