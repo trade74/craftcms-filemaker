@@ -19,10 +19,10 @@
             "craftyfm\\craftcms-filemaker\\": "src/"
         },
         "exclude-from-classmap": [
-            "vendor/craftcms/feed-me/src/helpers/AssetHelper.php"
+            "../../vendor/craftcms/feed-me/src/helpers/AssetHelper.php"
         ],
         "files": [
-            "vendor/craftyfm/craftcms-filemaker/src/overrides/AssetHelper.php"
+            "src/overrides/AssetHelper.php"
         ]
     },
     "extra": {
