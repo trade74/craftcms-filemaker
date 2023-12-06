@@ -1,6 +1,6 @@
 <?php
 
-namespace craft\feedme\helpers;
+namespace craftyfm\filemaker\overrides;
 
 use Cake\Utility\Hash;
 use Craft;
@@ -23,7 +23,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use craft\Helpers;
 
-class AssetHelper 
+class AssetHelper extends \craft\feedme\helpers\AssetHelper
 {
     // Public Methods
     // =========================================================================

@@ -1,5 +1,5 @@
 {
-    "name": "craftyfm/craftcms-filemaker",
+    "name": "craftyfm/filemaker",
     "description": "A craft CMS plugin to simplify connection to the Filemaker Data API. Connect to a filemaker database and use a button from Filemaker to push data into Craft CMS. This plugin also using webhooks to push dat into Filemaker's Data API",
     "type": "craft-plugin",
     "license": "proprietary",
@@ -16,15 +16,8 @@
     },
     "autoload": {
         "psr-4": {
-            "craftyfm\\craftcms-filemaker\\": "src/",
-            "craftcms\\feed-me\\": "../../vendor/craft/feed-me/src/"
-        },
-        "exclude-from-classmap": [
-            "../../vendor/craftcms/feed-me/src/helpers/AssetHelper.php"
-        ],
-        "files": [
-            "src/overrides/AssetHelper.php"
-        ]
+            "craftyfm\\filemaker\\": "src/"
+        }
     },
     "extra": {
         "handle": "filemaker",
